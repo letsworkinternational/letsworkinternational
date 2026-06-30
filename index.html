@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -991,6 +990,114 @@
             </div>
         </div>
 
+        <!-- ==================== PAGE: WERKNEMERSFORMULIER ==================== -->
+        <div id="view-werknemersformulier" class="page-view hidden fade-in">
+            <section class="relative gradient-bg py-14 sm:py-20 text-white overflow-hidden">
+                <div class="absolute top-0 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
+                <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-4">
+                    <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/10 text-xs font-bold uppercase tracking-wider text-purple-100">
+                        <i data-lucide="clipboard-list" class="w-4 h-4"></i> Werknemersformulier Let's Work International
+                    </span>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Inschrijven als medewerker</h2>
+                    <p class="text-sm sm:text-lg text-slate-200 max-w-3xl mx-auto leading-relaxed">
+                        Vul het formulier volledig in. Houd je BSN, IBAN en gegevens van je ID-bewijs bij de hand. Het formulier wordt verstuurd naar <strong>info@letsworkinternational.nl</strong>.
+                    </p>
+                </div>
+            </section>
+
+            <section class="py-12 sm:py-16 bg-slate-50">
+                <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden">
+                        <div class="bg-[#131135] text-white px-6 sm:px-10 py-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                            <div>
+                                <h3 class="text-xl sm:text-2xl font-extrabold">Werknemersformulier Let's Work International</h3>
+                                <p class="text-slate-300 text-xs sm:text-sm mt-1">Velden met * zijn verplicht.</p>
+                            </div>
+                            <div class="inline-flex items-center gap-2 text-xs font-bold bg-[#A13CB8]/20 text-purple-100 border border-[#A13CB8]/30 rounded-xl px-3 py-2">
+                                <i data-lucide="mail" class="w-4 h-4"></i> info@letsworkinternational.nl
+                            </div>
+                        </div>
+
+                        <form action="https://formsubmit.co/info@letsworkinternational.nl" method="POST" enctype="multipart/form-data" class="p-6 sm:p-10 space-y-10">
+                            <input type="hidden" name="_subject" value="Nieuwe inschrijving via Let's Work International">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="https://letsworkinternational.github.io/letsworkinternational/">
+                            <div class="space-y-5">
+                                <div class="flex items-center gap-3 border-b border-slate-100 pb-3">
+                                    <div class="w-10 h-10 rounded-2xl bg-purple-50 flex items-center justify-center text-[#A13CB8]"><i data-lucide="user" class="w-5 h-5"></i></div>
+                                    <h4 class="text-lg font-extrabold text-slate-900">Gegevens werknemer</h4>
+                                </div>
+
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                    <label class="space-y-2 text-sm font-bold text-slate-700">Geslacht *
+                                        <select name="Geslacht" required class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500">
+                                            <option value="">Maak een keuze</option><option>Heer</option><option>Mevrouw</option>
+                                        </select>
+                                    </label>
+                                    <label class="space-y-2 text-sm font-bold text-slate-700">Voornaam *<input name="Voornaam" required type="text" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"></label>
+                                    <label class="space-y-2 text-sm font-bold text-slate-700">Voorletters *<input name="Voorletters" required type="text" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"></label>
+                                    <label class="space-y-2 text-sm font-bold text-slate-700">Voorvoegsels<input name="Voorvoegsels" type="text" placeholder="Bijv. van der" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"></label>
+                                    <label class="space-y-2 text-sm font-bold text-slate-700">Achternaam *<input name="Achternaam" required type="text" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"></label>
+                                    <label class="space-y-2 text-sm font-bold text-slate-700">E-mail *<input name="E-mail" required type="email" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"></label>
+                                    <label class="space-y-2 text-sm font-bold text-slate-700">Confirmation Email *<input name="Confirmation Email" required type="email" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"></label>
+                                    <label class="space-y-2 text-sm font-bold text-slate-700">Mobiel *<input name="Mobiel" required type="tel" placeholder="0612345678" pattern="[0-9]{10}" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"><span class="block text-xs font-medium text-slate-400">Geen spaties of streepjes.</span></label>
+                                    <label class="space-y-2 text-sm font-bold text-slate-700">Burgerlijke staat *<input name="Burgerlijke staat" required type="text" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"></label>
+                                    <label class="space-y-2 text-sm font-bold text-slate-700">Land *<input name="Land" required type="text" placeholder="In welk land woon je?" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"></label>
+                                </div>
+                            </div>
+
+                            <div class="space-y-5">
+                                <div class="flex items-center gap-3 border-b border-slate-100 pb-3">
+                                    <div class="w-10 h-10 rounded-2xl bg-purple-50 flex items-center justify-center text-[#A13CB8]"><i data-lucide="id-card" class="w-5 h-5"></i></div>
+                                    <h4 class="text-lg font-extrabold text-slate-900">Overige gegevens</h4>
+                                </div>
+                                <p class="text-xs text-slate-500 bg-slate-50 border border-slate-100 rounded-xl px-4 py-3">Let op: gebruik altijd 2 cijfers bij dag en maand, bijvoorbeeld 02-05-1980.</p>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                    <label class="space-y-2 text-sm font-bold text-slate-700">Geboortedatum *<input name="Geboortedatum" required type="date" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"></label>
+                                    <label class="space-y-2 text-sm font-bold text-slate-700">Geboorteland *<input name="Geboorteland" required type="text" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"></label>
+                                    <label class="space-y-2 text-sm font-bold text-slate-700">Geboorteplaats *<input name="Geboorteplaats" required type="text" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"></label>
+                                    <label class="space-y-2 text-sm font-bold text-slate-700">Nationaliteit *<input name="Nationaliteit" required type="text" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"></label>
+                                    <label class="space-y-2 text-sm font-bold text-slate-700">Soort ID bewijs *<select name="Soort ID bewijs" required class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"><option value="">Maak een keuze</option><option>Paspoort</option><option>ID-kaart</option><option>Verblijfsdocument</option></select></label>
+                                    <label class="space-y-2 text-sm font-bold text-slate-700">Paspoort / ID nummer *<input name="Paspoort ID nummer" required type="text" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"></label>
+                                    <label class="space-y-2 text-sm font-bold text-slate-700">Paspoort/ID geldig tot *<input name="Paspoort ID geldig tot" required type="date" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"></label>
+                                    <label class="space-y-2 text-sm font-bold text-slate-700">Burgerservicenummer (BSN) *<input name="BSN" required type="text" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"></label>
+                                    <label class="space-y-2 text-sm font-bold text-slate-700">IBAN Bankrekeningnummer *<input name="IBAN" required type="text" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"><span class="block text-xs font-medium text-slate-400">Vul het IBAN correct in, inclusief 2-cijferige landcode.</span></label>
+                                    <label class="space-y-2 text-sm font-bold text-slate-700">BIC/SWIFT *<input name="BIC SWIFT" required maxlength="8" type="text" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"><span class="block text-xs font-medium text-slate-400">Een BIC/SWIFT-code identificeert banken wereldwijd.</span></label>
+                                    <label class="space-y-2 text-sm font-bold text-slate-700 md:col-span-2">Loonheffingskorting toepassen? *<select name="Loonheffingskorting toepassen" required class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"><option value="">Maak een keuze</option><option>Ja</option><option>Nee</option></select><span class="block text-xs font-medium text-slate-400">Advies: kies Ja tenzij je nog een andere baan hebt waar je meer mee verdient.</span></label>
+                                </div>
+                            </div>
+
+                            <div class="space-y-5">
+                                <div class="flex items-center gap-3 border-b border-slate-100 pb-3">
+                                    <div class="w-10 h-10 rounded-2xl bg-purple-50 flex items-center justify-center text-[#A13CB8]"><i data-lucide="paperclip" class="w-5 h-5"></i></div>
+                                    <h4 class="text-lg font-extrabold text-slate-900">Documenten en opmerkingen</h4>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                    <label class="space-y-2 text-sm font-bold text-slate-700">Upload CV<input name="Upload CV" type="file" class="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm file:mr-3 file:py-2 file:px-3 file:rounded-lg file:border-0 file:bg-[#A13CB8] file:text-white file:font-bold"><span class="block text-xs font-medium text-slate-400">Geen CV bij de hand? Stuur deze dan later op.</span></label>
+                                    <label class="space-y-2 text-sm font-bold text-slate-700">Overige documenten<input name="Overige documenten" type="file" multiple class="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm file:mr-3 file:py-2 file:px-3 file:rounded-lg file:border-0 file:bg-[#A13CB8] file:text-white file:font-bold"></label>
+                                    <label class="space-y-2 text-sm font-bold text-slate-700 md:col-span-2">Opmerkingen<textarea name="Opmerkingen" rows="4" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea></label>
+                                </div>
+                            </div>
+
+                            <div class="bg-slate-50 rounded-2xl p-5 border border-slate-100 space-y-4">
+                                <p class="text-sm text-slate-600 leading-relaxed">Met het versturen van dit formulier geeft u toestemming dat wij uw gegevens verwerken. Wij gaan zorgvuldig om met uw persoonsgegevens.</p>
+                                <label class="flex items-start gap-3 text-sm font-bold text-slate-700"><input type="checkbox" name="Privacy Statement" value="Ik ga akkoord" required class="mt-1 w-4 h-4 accent-[#A13CB8]"> Ik ga akkoord met de privacyverklaring *</label>
+                            </div>
+
+                            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
+                                <p class="text-xs text-slate-400">* = verplicht invullen</p>
+                                <button type="submit" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#A13CB8] hover:bg-[#8a2fa0] text-white font-extrabold shadow-lg smooth-transition">
+                                    <i data-lucide="send" class="w-5 h-5"></i> Versturen
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
     </main>
 
     <!-- CUSTOM HTML MODALS -->
@@ -1078,112 +1185,6 @@
         </div>
     </div>
 
-
-        <!-- ==================== PAGE: WERKNEMERSFORMULIER ==================== -->
-        <div id="view-werknemersformulier" class="page-view hidden fade-in">
-            <section class="relative gradient-bg py-14 sm:py-20 text-white overflow-hidden">
-                <div class="absolute top-0 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
-                <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-4">
-                    <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/10 text-xs font-bold uppercase tracking-wider text-purple-100">
-                        <i data-lucide="clipboard-list" class="w-4 h-4"></i> Werknemersformulier Let's Work International
-                    </span>
-                    <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Inschrijven als medewerker</h2>
-                    <p class="text-sm sm:text-lg text-slate-200 max-w-3xl mx-auto leading-relaxed">
-                        Vul het formulier volledig in. Houd je BSN, IBAN en gegevens van je ID-bewijs bij de hand. Het formulier wordt verstuurd naar <strong>info@letsworkinternational.nl</strong>.
-                    </p>
-                </div>
-            </section>
-
-            <section class="py-12 sm:py-16 bg-slate-50">
-                <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden">
-                        <div class="bg-[#131135] text-white px-6 sm:px-10 py-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-                            <div>
-                                <h3 class="text-xl sm:text-2xl font-extrabold">Werknemersformulier Let's Work International</h3>
-                                <p class="text-slate-300 text-xs sm:text-sm mt-1">Velden met * zijn verplicht.</p>
-                            </div>
-                            <div class="inline-flex items-center gap-2 text-xs font-bold bg-[#A13CB8]/20 text-purple-100 border border-[#A13CB8]/30 rounded-xl px-3 py-2">
-                                <i data-lucide="mail" class="w-4 h-4"></i> info@letsworkinternational.nl
-                            </div>
-                        </div>
-
-                        <form action="https://formsubmit.co/info@letsworkinternational.nl" method="POST" enctype="multipart/form-data" class="p-6 sm:p-10 space-y-10">
-                            <input type="hidden" name="_subject" value="Nieuwe inschrijving via Let's Work International">
-                            <input type="hidden" name="_template" value="table">
-                            <input type="hidden" name="_captcha" value="false">
-                            <div class="space-y-5">
-                                <div class="flex items-center gap-3 border-b border-slate-100 pb-3">
-                                    <div class="w-10 h-10 rounded-2xl bg-purple-50 flex items-center justify-center text-[#A13CB8]"><i data-lucide="user" class="w-5 h-5"></i></div>
-                                    <h4 class="text-lg font-extrabold text-slate-900">Gegevens werknemer</h4>
-                                </div>
-
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                                    <label class="space-y-2 text-sm font-bold text-slate-700">Geslacht *
-                                        <select name="Geslacht" required class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500">
-                                            <option value="">Maak een keuze</option><option>Heer</option><option>Mevrouw</option>
-                                        </select>
-                                    </label>
-                                    <label class="space-y-2 text-sm font-bold text-slate-700">Voornaam *<input name="Voornaam" required type="text" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"></label>
-                                    <label class="space-y-2 text-sm font-bold text-slate-700">Voorletters *<input name="Voorletters" required type="text" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"></label>
-                                    <label class="space-y-2 text-sm font-bold text-slate-700">Voorvoegsels<input name="Voorvoegsels" type="text" placeholder="Bijv. van der" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"></label>
-                                    <label class="space-y-2 text-sm font-bold text-slate-700">Achternaam *<input name="Achternaam" required type="text" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"></label>
-                                    <label class="space-y-2 text-sm font-bold text-slate-700">E-mail *<input name="E-mail" required type="email" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"></label>
-                                    <label class="space-y-2 text-sm font-bold text-slate-700">Confirmation Email *<input name="Confirmation Email" required type="email" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"></label>
-                                    <label class="space-y-2 text-sm font-bold text-slate-700">Mobiel *<input name="Mobiel" required type="tel" placeholder="0612345678" pattern="[0-9]{10}" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"><span class="block text-xs font-medium text-slate-400">Geen spaties of streepjes.</span></label>
-                                    <label class="space-y-2 text-sm font-bold text-slate-700">Burgerlijke staat *<input name="Burgerlijke staat" required type="text" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"></label>
-                                    <label class="space-y-2 text-sm font-bold text-slate-700">Land *<input name="Land" required type="text" placeholder="In welk land woon je?" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"></label>
-                                </div>
-                            </div>
-
-                            <div class="space-y-5">
-                                <div class="flex items-center gap-3 border-b border-slate-100 pb-3">
-                                    <div class="w-10 h-10 rounded-2xl bg-purple-50 flex items-center justify-center text-[#A13CB8]"><i data-lucide="id-card" class="w-5 h-5"></i></div>
-                                    <h4 class="text-lg font-extrabold text-slate-900">Overige gegevens</h4>
-                                </div>
-                                <p class="text-xs text-slate-500 bg-slate-50 border border-slate-100 rounded-xl px-4 py-3">Let op: gebruik altijd 2 cijfers bij dag en maand, bijvoorbeeld 02-05-1980.</p>
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                                    <label class="space-y-2 text-sm font-bold text-slate-700">Geboortedatum *<input name="Geboortedatum" required type="date" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"></label>
-                                    <label class="space-y-2 text-sm font-bold text-slate-700">Geboorteland *<input name="Geboorteland" required type="text" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"></label>
-                                    <label class="space-y-2 text-sm font-bold text-slate-700">Geboorteplaats *<input name="Geboorteplaats" required type="text" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"></label>
-                                    <label class="space-y-2 text-sm font-bold text-slate-700">Nationaliteit *<input name="Nationaliteit" required type="text" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"></label>
-                                    <label class="space-y-2 text-sm font-bold text-slate-700">Soort ID bewijs *<select name="Soort ID bewijs" required class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"><option value="">Maak een keuze</option><option>Paspoort</option><option>ID-kaart</option><option>Verblijfsdocument</option></select></label>
-                                    <label class="space-y-2 text-sm font-bold text-slate-700">Paspoort / ID nummer *<input name="Paspoort ID nummer" required type="text" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"></label>
-                                    <label class="space-y-2 text-sm font-bold text-slate-700">Paspoort/ID geldig tot *<input name="Paspoort ID geldig tot" required type="date" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"></label>
-                                    <label class="space-y-2 text-sm font-bold text-slate-700">Burgerservicenummer (BSN) *<input name="BSN" required type="text" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"></label>
-                                    <label class="space-y-2 text-sm font-bold text-slate-700">IBAN Bankrekeningnummer *<input name="IBAN" required type="text" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"><span class="block text-xs font-medium text-slate-400">Vul het IBAN correct in, inclusief 2-cijferige landcode.</span></label>
-                                    <label class="space-y-2 text-sm font-bold text-slate-700">BIC/SWIFT *<input name="BIC SWIFT" required maxlength="8" type="text" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"><span class="block text-xs font-medium text-slate-400">Een BIC/SWIFT-code identificeert banken wereldwijd.</span></label>
-                                    <label class="space-y-2 text-sm font-bold text-slate-700 md:col-span-2">Loonheffingskorting toepassen? *<select name="Loonheffingskorting toepassen" required class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"><option value="">Maak een keuze</option><option>Ja</option><option>Nee</option></select><span class="block text-xs font-medium text-slate-400">Advies: kies Ja tenzij je nog een andere baan hebt waar je meer mee verdient.</span></label>
-                                </div>
-                            </div>
-
-                            <div class="space-y-5">
-                                <div class="flex items-center gap-3 border-b border-slate-100 pb-3">
-                                    <div class="w-10 h-10 rounded-2xl bg-purple-50 flex items-center justify-center text-[#A13CB8]"><i data-lucide="paperclip" class="w-5 h-5"></i></div>
-                                    <h4 class="text-lg font-extrabold text-slate-900">Documenten en opmerkingen</h4>
-                                </div>
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                                    <label class="space-y-2 text-sm font-bold text-slate-700">Upload CV<input name="Upload CV" type="file" class="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm file:mr-3 file:py-2 file:px-3 file:rounded-lg file:border-0 file:bg-[#A13CB8] file:text-white file:font-bold"><span class="block text-xs font-medium text-slate-400">Geen CV bij de hand? Stuur deze dan later op.</span></label>
-                                    <label class="space-y-2 text-sm font-bold text-slate-700">Overige documenten<input name="Overige documenten" type="file" multiple class="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm file:mr-3 file:py-2 file:px-3 file:rounded-lg file:border-0 file:bg-[#A13CB8] file:text-white file:font-bold"></label>
-                                    <label class="space-y-2 text-sm font-bold text-slate-700 md:col-span-2">Opmerkingen<textarea name="Opmerkingen" rows="4" class="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea></label>
-                                </div>
-                            </div>
-
-                            <div class="bg-slate-50 rounded-2xl p-5 border border-slate-100 space-y-4">
-                                <p class="text-sm text-slate-600 leading-relaxed">Met het versturen van dit formulier geeft u toestemming dat wij uw gegevens verwerken. Wij gaan zorgvuldig om met uw persoonsgegevens.</p>
-                                <label class="flex items-start gap-3 text-sm font-bold text-slate-700"><input type="checkbox" name="Privacy Statement" value="Ik ga akkoord" required class="mt-1 w-4 h-4 accent-[#A13CB8]"> Ik ga akkoord met de privacyverklaring *</label>
-                            </div>
-
-                            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
-                                <p class="text-xs text-slate-400">* = verplicht invullen</p>
-                                <button type="submit" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#A13CB8] hover:bg-[#8a2fa0] text-white font-extrabold shadow-lg smooth-transition">
-                                    <i data-lucide="send" class="w-5 h-5"></i> Versturen
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </section>
-        </div>
 
     <!-- FOOTER -->
     <footer class="bg-[#131135] text-slate-400 py-12 border-t border-white/10 text-xs mt-auto">
